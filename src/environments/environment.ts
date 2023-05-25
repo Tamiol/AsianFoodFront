@@ -1,3 +1,3 @@
 export const environment = {
-  apiBaseUrl: 'asianfoodapp-production.up.railway.app/',
+  apiBaseUrl: 'http://asianfoodapp-production.up.railway.app/',
 };
