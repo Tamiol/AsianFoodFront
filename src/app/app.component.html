@@ -1,6 +1,20 @@
-<div *ngFor="let recipe of catalog">
-  <div>
-
+<div *ngFor="let recipe of catalog" class="card">
+  <div class="card_img_cont">
+<!--    <img src="assets/img/turtle1.png" alt="image0-2">-->
   </div>
-  <p>{{recipe.name}}</p>
+  <div class="card_text">
+    <p>{{recipe.name}}</p>
+    <span>{{recipe.readyInMinutes}}</span>
+      <ul>
+        <li [hidden]="!recipe.glutenFree">
+          Gluten-free
+        </li>
+        <li [hidden] = "!recipe.vegan">
+          Vegan
+        </li>
+        <li [hidden] = "!recipe.vegetarian">
+          Vegetarian
+        </li>
+      </ul>
+  </div>
 </div>

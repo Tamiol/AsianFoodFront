@@ -18,8 +18,6 @@ export class AppComponent implements OnInit {
   public getCatalog(): void {
     this.catalogService.getCatalog().subscribe(
       (response: Recipe[]) => {
-        console.log("Get recipe list:");
-        console.log(response);
         this.catalog = response;
       },
       (error: HttpErrorResponse) => {

@@ -116,3 +116,9 @@ section:first-of-type::before {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+.card_box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
